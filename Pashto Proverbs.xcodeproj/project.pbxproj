@@ -7,21 +7,127 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0DEE4A5F886CA1441D6E6E38 /* Pods_Pashto_Proverbs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA11D766FA172A806036FA68 /* Pods_Pashto_Proverbs.framework */; };
+		F306CAD81FE72B0700A7681C /* Proverb.swift in Sources */ = {isa = PBXBuildFile; fileRef = F306CAD71FE72B0700A7681C /* Proverb.swift */; };
+		F306CADA1FE75CBB00A7681C /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F306CAD91FE75CBB00A7681C /* DatabaseManager.swift */; };
+		F306CAE71FE7660C00A7681C /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F306CAC91FE728DC00A7681C /* SQLite.framework */; };
+		F306CAE81FE7660C00A7681C /* SQLite.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F306CAC91FE728DC00A7681C /* SQLite.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F306CAED1FE7751A00A7681C /* database.sqlite3 in Resources */ = {isa = PBXBuildFile; fileRef = F306CAEC1FE7751A00A7681C /* database.sqlite3 */; };
+		F37EAC9C1FF2C5A6003D8BD6 /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37EAC9B1FF2C5A6003D8BD6 /* CategoriesViewController.swift */; };
+		F37EAC9F1FF2D733003D8BD6 /* ProverbsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37EAC9E1FF2D733003D8BD6 /* ProverbsViewController.swift */; };
+		F37EACA71FF31B8B003D8BD6 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37EACA61FF31B8B003D8BD6 /* DetailViewController.swift */; };
+		F37EACA91FF328FE003D8BD6 /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37EACA81FF328FE003D8BD6 /* FavoriteViewController.swift */; };
+		F37EACAB1FF34286003D8BD6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F37EACAA1FF34286003D8BD6 /* GoogleService-Info.plist */; };
+		F37EACB11FF3F747003D8BD6 /* CategoryViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37EACB01FF3F747003D8BD6 /* CategoryViewCell.swift */; };
+		F3B6647E1FF45F3E0055C0C6 /* BahijUthmanTaha-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F3B664771FF45F3E0055C0C6 /* BahijUthmanTaha-Regular.ttf */; };
+		F3B664801FF462E00055C0C6 /* BahijUthmanTaha-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F3B6647F1FF462DF0055C0C6 /* BahijUthmanTaha-Bold.ttf */; };
+		F3B664821FF469FC0055C0C6 /* ProverbViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B664811FF469FB0055C0C6 /* ProverbViewCell.swift */; };
+		F3B664841FF4718D0055C0C6 /* Banner.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B664831FF4718D0055C0C6 /* Banner.swift */; };
 		F3DAAC1F1FE5A35700DC24E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DAAC1E1FE5A35700DC24E7 /* AppDelegate.swift */; };
-		F3DAAC211FE5A35700DC24E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DAAC201FE5A35700DC24E7 /* ViewController.swift */; };
+		F3DAAC211FE5A35700DC24E7 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DAAC201FE5A35700DC24E7 /* MainViewController.swift */; };
 		F3DAAC241FE5A35700DC24E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3DAAC221FE5A35700DC24E7 /* Main.storyboard */; };
 		F3DAAC261FE5A35700DC24E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3DAAC251FE5A35700DC24E7 /* Assets.xcassets */; };
 		F3DAAC291FE5A35700DC24E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3DAAC271FE5A35700DC24E7 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		F306CAC81FE728DC00A7681C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F306CAA01FE727B500A7681C /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247AD31C3F04ED00AE3E12;
+			remoteInfo = "SQLite iOS";
+		};
+		F306CACA1FE728DC00A7681C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F306CAA01FE727B500A7681C /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247ADD1C3F04ED00AE3E12;
+			remoteInfo = "SQLiteTests iOS";
+		};
+		F306CACC1FE728DC00A7681C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F306CAA01FE727B500A7681C /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247B3C1C3F3ED000AE3E12;
+			remoteInfo = "SQLite Mac";
+		};
+		F306CACE1FE728DC00A7681C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F306CAA01FE727B500A7681C /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247B451C3F3ED000AE3E12;
+			remoteInfo = "SQLiteTests Mac";
+		};
+		F306CAD01FE728DC00A7681C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F306CAA01FE727B500A7681C /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 03A65E5A1C6BB0F50062603F;
+			remoteInfo = "SQLite tvOS";
+		};
+		F306CAD21FE728DC00A7681C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F306CAA01FE727B500A7681C /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 03A65E631C6BB0F60062603F;
+			remoteInfo = "SQLiteTests tvOS";
+		};
+		F306CAD41FE728DC00A7681C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F306CAA01FE727B500A7681C /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A121AC451CA35C79005A31D1;
+			remoteInfo = "SQLite watchOS";
+		};
+		F306CAE91FE7660C00A7681C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F306CAA01FE727B500A7681C /* SQLite.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = EE247AD21C3F04ED00AE3E12;
+			remoteInfo = "SQLite iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F306CABE1FE7281A00A7681C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F306CAE81FE7660C00A7681C /* SQLite.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		29716EC77ABF1CB9212AD241 /* Pods-Pashto Proverbs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pashto Proverbs.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pashto Proverbs/Pods-Pashto Proverbs.debug.xcconfig"; sourceTree = "<group>"; };
+		6924027C6FDB9EB1EB3FD6DB /* Pods-Pashto Proverbs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pashto Proverbs.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pashto Proverbs/Pods-Pashto Proverbs.release.xcconfig"; sourceTree = "<group>"; };
+		F306CAA01FE727B500A7681C /* SQLite.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SQLite.xcodeproj; path = "SQLite.swift-master/SQLite.xcodeproj"; sourceTree = "<group>"; };
+		F306CAD71FE72B0700A7681C /* Proverb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Proverb.swift; sourceTree = "<group>"; };
+		F306CAD91FE75CBB00A7681C /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		F306CAEC1FE7751A00A7681C /* database.sqlite3 */ = {isa = PBXFileReference; lastKnownFileType = file; path = database.sqlite3; sourceTree = "<group>"; };
+		F37EAC9B1FF2C5A6003D8BD6 /* CategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewController.swift; sourceTree = "<group>"; };
+		F37EAC9E1FF2D733003D8BD6 /* ProverbsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProverbsViewController.swift; sourceTree = "<group>"; };
+		F37EACA61FF31B8B003D8BD6 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		F37EACA81FF328FE003D8BD6 /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
+		F37EACAA1FF34286003D8BD6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F37EACB01FF3F747003D8BD6 /* CategoryViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewCell.swift; sourceTree = "<group>"; };
+		F3B664771FF45F3E0055C0C6 /* BahijUthmanTaha-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BahijUthmanTaha-Regular.ttf"; sourceTree = "<group>"; };
+		F3B6647F1FF462DF0055C0C6 /* BahijUthmanTaha-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BahijUthmanTaha-Bold.ttf"; sourceTree = "<group>"; };
+		F3B664811FF469FB0055C0C6 /* ProverbViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProverbViewCell.swift; sourceTree = "<group>"; };
+		F3B664831FF4718D0055C0C6 /* Banner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Banner.swift; sourceTree = "<group>"; };
 		F3DAAC1B1FE5A35700DC24E7 /* Pashto Proverbs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pashto Proverbs.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3DAAC1E1FE5A35700DC24E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F3DAAC201FE5A35700DC24E7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F3DAAC201FE5A35700DC24E7 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		F3DAAC231FE5A35700DC24E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F3DAAC251FE5A35700DC24E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F3DAAC281FE5A35700DC24E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F3DAAC2A1FE5A35700DC24E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA11D766FA172A806036FA68 /* Pods_Pashto_Proverbs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pashto_Proverbs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +135,94 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F306CAE71FE7660C00A7681C /* SQLite.framework in Frameworks */,
+				0DEE4A5F886CA1441D6E6E38 /* Pods_Pashto_Proverbs.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9F087DE925099447D606EE62 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				29716EC77ABF1CB9212AD241 /* Pods-Pashto Proverbs.debug.xcconfig */,
+				6924027C6FDB9EB1EB3FD6DB /* Pods-Pashto Proverbs.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F306CA9D1FE7264200A7681C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F3B664831FF4718D0055C0C6 /* Banner.swift */,
+				F306CAD71FE72B0700A7681C /* Proverb.swift */,
+				F37EACB01FF3F747003D8BD6 /* CategoryViewCell.swift */,
+				F3B664811FF469FB0055C0C6 /* ProverbViewCell.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F306CA9E1FE7264B00A7681C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F3DAAC201FE5A35700DC24E7 /* MainViewController.swift */,
+				F37EAC9B1FF2C5A6003D8BD6 /* CategoriesViewController.swift */,
+				F37EAC9E1FF2D733003D8BD6 /* ProverbsViewController.swift */,
+				F37EACA81FF328FE003D8BD6 /* FavoriteViewController.swift */,
+				F37EACA61FF31B8B003D8BD6 /* DetailViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F306CA9F1FE7266600A7681C /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				F306CAD91FE75CBB00A7681C /* DatabaseManager.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		F306CAB81FE727D600A7681C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA11D766FA172A806036FA68 /* Pods_Pashto_Proverbs.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F306CABF1FE728DC00A7681C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F306CAC91FE728DC00A7681C /* SQLite.framework */,
+				F306CACB1FE728DC00A7681C /* SQLiteTests iOS.xctest */,
+				F306CACD1FE728DC00A7681C /* SQLite.framework */,
+				F306CACF1FE728DC00A7681C /* SQLiteTests Mac.xctest */,
+				F306CAD11FE728DC00A7681C /* SQLite.framework */,
+				F306CAD31FE728DC00A7681C /* SQLiteTests tvOS.xctest */,
+				F306CAD51FE728DC00A7681C /* SQLite.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F306CAD61FE728FF00A7681C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F3B664771FF45F3E0055C0C6 /* BahijUthmanTaha-Regular.ttf */,
+				F3B6647F1FF462DF0055C0C6 /* BahijUthmanTaha-Bold.ttf */,
+				F306CAEC1FE7751A00A7681C /* database.sqlite3 */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		F3DAAC121FE5A35700DC24E7 = {
 			isa = PBXGroup;
 			children = (
 				F3DAAC1D1FE5A35700DC24E7 /* Pashto Proverbs */,
 				F3DAAC1C1FE5A35700DC24E7 /* Products */,
+				F306CAA01FE727B500A7681C /* SQLite.xcodeproj */,
+				F306CAB81FE727D600A7681C /* Frameworks */,
+				9F087DE925099447D606EE62 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,11 +237,15 @@
 		F3DAAC1D1FE5A35700DC24E7 /* Pashto Proverbs */ = {
 			isa = PBXGroup;
 			children = (
+				F306CA9E1FE7264B00A7681C /* Controllers */,
+				F306CA9F1FE7266600A7681C /* Database */,
+				F306CA9D1FE7264200A7681C /* Models */,
+				F306CAD61FE728FF00A7681C /* Resources */,
 				F3DAAC1E1FE5A35700DC24E7 /* AppDelegate.swift */,
-				F3DAAC201FE5A35700DC24E7 /* ViewController.swift */,
 				F3DAAC221FE5A35700DC24E7 /* Main.storyboard */,
 				F3DAAC251FE5A35700DC24E7 /* Assets.xcassets */,
 				F3DAAC271FE5A35700DC24E7 /* LaunchScreen.storyboard */,
+				F37EACAA1FF34286003D8BD6 /* GoogleService-Info.plist */,
 				F3DAAC2A1FE5A35700DC24E7 /* Info.plist */,
 			);
 			path = "Pashto Proverbs";
@@ -71,13 +258,18 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F3DAAC2D1FE5A35700DC24E7 /* Build configuration list for PBXNativeTarget "Pashto Proverbs" */;
 			buildPhases = (
+				9EFA20A01F8BB01C711D21FB /* [CP] Check Pods Manifest.lock */,
 				F3DAAC171FE5A35700DC24E7 /* Sources */,
 				F3DAAC181FE5A35700DC24E7 /* Frameworks */,
 				F3DAAC191FE5A35700DC24E7 /* Resources */,
+				F306CABE1FE7281A00A7681C /* Embed Frameworks */,
+				DAEF0E67E9B5F6C906811593 /* [CP] Embed Pods Frameworks */,
+				D8D73059C665D80FEDE73AE9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				F306CAEA1FE7660C00A7681C /* PBXTargetDependency */,
 			);
 			name = "Pashto Proverbs";
 			productName = "Pashto Proverbs";
@@ -111,6 +303,12 @@
 			mainGroup = F3DAAC121FE5A35700DC24E7;
 			productRefGroup = F3DAAC1C1FE5A35700DC24E7 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = F306CABF1FE728DC00A7681C /* Products */;
+					ProjectRef = F306CAA01FE727B500A7681C /* SQLite.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				F3DAAC1A1FE5A35700DC24E7 /* Pashto Proverbs */,
@@ -118,30 +316,159 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		F306CAC91FE728DC00A7681C /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = F306CAC81FE728DC00A7681C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F306CACB1FE728DC00A7681C /* SQLiteTests iOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SQLiteTests iOS.xctest";
+			remoteRef = F306CACA1FE728DC00A7681C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F306CACD1FE728DC00A7681C /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = F306CACC1FE728DC00A7681C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F306CACF1FE728DC00A7681C /* SQLiteTests Mac.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SQLiteTests Mac.xctest";
+			remoteRef = F306CACE1FE728DC00A7681C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F306CAD11FE728DC00A7681C /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = F306CAD01FE728DC00A7681C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F306CAD31FE728DC00A7681C /* SQLiteTests tvOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SQLiteTests tvOS.xctest";
+			remoteRef = F306CAD21FE728DC00A7681C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F306CAD51FE728DC00A7681C /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = F306CAD41FE728DC00A7681C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		F3DAAC191FE5A35700DC24E7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F306CAED1FE7751A00A7681C /* database.sqlite3 in Resources */,
 				F3DAAC291FE5A35700DC24E7 /* LaunchScreen.storyboard in Resources */,
+				F37EACAB1FF34286003D8BD6 /* GoogleService-Info.plist in Resources */,
 				F3DAAC261FE5A35700DC24E7 /* Assets.xcassets in Resources */,
+				F3B6647E1FF45F3E0055C0C6 /* BahijUthmanTaha-Regular.ttf in Resources */,
 				F3DAAC241FE5A35700DC24E7 /* Main.storyboard in Resources */,
+				F3B664801FF462E00055C0C6 /* BahijUthmanTaha-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9EFA20A01F8BB01C711D21FB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Pashto Proverbs-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D8D73059C665D80FEDE73AE9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pashto Proverbs/Pods-Pashto Proverbs-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DAEF0E67E9B5F6C906811593 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Pashto Proverbs/Pods-Pashto Proverbs-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pashto Proverbs/Pods-Pashto Proverbs-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F3DAAC171FE5A35700DC24E7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3DAAC211FE5A35700DC24E7 /* ViewController.swift in Sources */,
+				F37EAC9C1FF2C5A6003D8BD6 /* CategoriesViewController.swift in Sources */,
+				F306CADA1FE75CBB00A7681C /* DatabaseManager.swift in Sources */,
+				F3DAAC211FE5A35700DC24E7 /* MainViewController.swift in Sources */,
 				F3DAAC1F1FE5A35700DC24E7 /* AppDelegate.swift in Sources */,
+				F3B664841FF4718D0055C0C6 /* Banner.swift in Sources */,
+				F306CAD81FE72B0700A7681C /* Proverb.swift in Sources */,
+				F37EACB11FF3F747003D8BD6 /* CategoryViewCell.swift in Sources */,
+				F37EAC9F1FF2D733003D8BD6 /* ProverbsViewController.swift in Sources */,
+				F37EACA91FF328FE003D8BD6 /* FavoriteViewController.swift in Sources */,
+				F37EACA71FF31B8B003D8BD6 /* DetailViewController.swift in Sources */,
+				F3B664821FF469FC0055C0C6 /* ProverbViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F306CAEA1FE7660C00A7681C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "SQLite iOS";
+			targetProxy = F306CAE91FE7660C00A7681C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		F3DAAC221FE5A35700DC24E7 /* Main.storyboard */ = {
@@ -272,13 +599,16 @@
 		};
 		F3DAAC2E1FE5A35700DC24E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29716EC77ABF1CB9212AD241 /* Pods-Pashto Proverbs.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = JYENF7CE7V;
 				INFOPLIST_FILE = "Pashto Proverbs/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.sunzala.Pashto-Proverbs";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sunzala.pashtoproverbs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -287,13 +617,16 @@
 		};
 		F3DAAC2F1FE5A35700DC24E7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6924027C6FDB9EB1EB3FD6DB /* Pods-Pashto Proverbs.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = JYENF7CE7V;
 				INFOPLIST_FILE = "Pashto Proverbs/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.sunzala.Pashto-Proverbs";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sunzala.pashtoproverbs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

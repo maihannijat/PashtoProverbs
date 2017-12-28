@@ -1,24 +1,613 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8O0-Vs-NDN">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="BahijUthmanTaha-Bold.ttf">
+            <string>BahijUthmanTaha-Bold</string>
+        </array>
+        <array key="BahijUthmanTaha-Regular.ttf">
+            <string>BahijUthmanTaha-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Pashto Proverbs-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="Pashto_Proverbs" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NUk-5e-N30" userLabel="proverbView">
+                                <rect key="frame" x="20" y="104" width="335" height="200"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="DKO-ra-Dso" userLabel="bg">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="200"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I am proverb and will be displayed dynamically each time the app is run." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bhb-a0-999" userLabel="proverb">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="200"/>
+                                        <color key="backgroundColor" red="0.45098039220000002" green="0.63529411759999999" blue="0.086274509799999996" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="BahijUthmanTaha-Regular" family="Bahij Uthman Taha" pointSize="30"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="BahijUthmanTaha-Regular" family="Bahij Uthman Taha" pointSize="30"/>
+                                        </variation>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="bhb-a0-999" firstAttribute="leading" secondItem="NUk-5e-N30" secondAttribute="leading" id="4kt-qg-V9V"/>
+                                    <constraint firstAttribute="trailing" secondItem="DKO-ra-Dso" secondAttribute="trailing" id="7gF-Gd-xbK"/>
+                                    <constraint firstAttribute="trailing" secondItem="bhb-a0-999" secondAttribute="trailing" id="HUH-HY-lr5"/>
+                                    <constraint firstAttribute="bottom" secondItem="bhb-a0-999" secondAttribute="bottom" id="JCA-XH-Yru"/>
+                                    <constraint firstItem="bhb-a0-999" firstAttribute="top" secondItem="NUk-5e-N30" secondAttribute="top" id="d8P-OM-ew3"/>
+                                    <constraint firstItem="DKO-ra-Dso" firstAttribute="leading" secondItem="NUk-5e-N30" secondAttribute="leading" id="mZS-uN-nBu"/>
+                                    <constraint firstAttribute="bottom" secondItem="DKO-ra-Dso" secondAttribute="bottom" id="oVa-7S-DQ5"/>
+                                    <constraint firstItem="DKO-ra-Dso" firstAttribute="top" secondItem="NUk-5e-N30" secondAttribute="top" id="ujY-01-S2Q"/>
+                                    <constraint firstAttribute="height" constant="200" id="xfP-9T-2cJ">
+                                        <variation key="heightClass=compact-widthClass=compact" constant="100"/>
+                                        <variation key="heightClass=compact-widthClass=regular" constant="120"/>
+                                        <variation key="heightClass=regular-widthClass=regular" constant="250"/>
+                                    </constraint>
+                                </constraints>
+                                <variation key="heightClass=compact-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="xfP-9T-2cJ"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="xfP-9T-2cJ"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="xfP-9T-2cJ"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b1h-BJ-Z2U" userLabel="categories">
+                                <rect key="frame" x="20" y="344" width="335" height="60"/>
+                                <color key="backgroundColor" red="0.45098039220000002" green="0.63529411759999999" blue="0.086274509799999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="E5z-pB-pvy">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="80"/>
+                                    </constraint>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BahijUthmanTaha-Bold" family="Bahij Uthman Taha" pointSize="35"/>
+                                <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="ټولۍ"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="heightClass=compact-widthClass=compact">
+                                    <fontDescription key="fontDescription" name="BahijUthmanTaha-Bold" family="Bahij Uthman Taha" pointSize="40"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="BahijUthmanTaha-Bold" family="Bahij Uthman Taha" pointSize="45"/>
+                                    <mask key="constraints">
+                                        <include reference="E5z-pB-pvy"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <segue destination="0bh-xv-52N" kind="show" identifier="categories" id="0fG-Tm-92d"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hgf-Fw-sTz" userLabel="favorites">
+                                <rect key="frame" x="20" y="434" width="335" height="60"/>
+                                <color key="backgroundColor" red="0.45098039220000002" green="0.63529411759999999" blue="0.086274509799999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="LTj-Wr-JQa">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="80"/>
+                                    </constraint>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BahijUthmanTaha-Bold" family="Bahij Uthman Taha" pointSize="35"/>
+                                <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="زما د خوښې"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="heightClass=compact-widthClass=compact">
+                                    <fontDescription key="fontDescription" name="BahijUthmanTaha-Bold" family="Bahij Uthman Taha" pointSize="40"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="BahijUthmanTaha-Bold" family="Bahij Uthman Taha" pointSize="45"/>
+                                    <mask key="constraints">
+                                        <include reference="LTj-Wr-JQa"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <segue destination="70i-96-YS9" kind="show" identifier="favorites" id="Rj9-KH-tlT"/>
+                                </connections>
+                            </button>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S4m-4y-1xn" userLabel="bannerAd" customClass="GADBannerView">
+                                <rect key="frame" x="0.0" y="607" width="375" height="55"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="2iP-T2-FdD">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="95"/>
+                                    </constraint>
+                                </constraints>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="2iP-T2-FdD"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="NUk-5e-N30" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="GPy-vz-PJG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="S4m-4y-1xn" secondAttribute="bottom" constant="5" id="HLm-SK-FBw"/>
+                            <constraint firstItem="S4m-4y-1xn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="I0j-AT-DkJ"/>
+                            <constraint firstItem="Hgf-Fw-sTz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="QDA-Cn-0W3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NUk-5e-N30" secondAttribute="trailing" constant="20" id="TlO-3d-Etd"/>
+                            <constraint firstItem="b1h-BJ-Z2U" firstAttribute="top" secondItem="NUk-5e-N30" secondAttribute="bottom" constant="60" id="b2a-cn-ZCr">
+                                <variation key="heightClass=compact-widthClass=compact" constant="20"/>
+                                <variation key="heightClass=compact-widthClass=regular" constant="20"/>
+                                <variation key="heightClass=regular-widthClass=compact" constant="40"/>
+                            </constraint>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="S4m-4y-1xn" secondAttribute="trailing" id="cxT-bc-8Oo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Hgf-Fw-sTz" secondAttribute="trailing" constant="20" id="fbD-Lb-YUR"/>
+                            <constraint firstItem="NUk-5e-N30" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="ilu-7a-9Yk">
+                                <variation key="heightClass=compact-widthClass=compact" constant="30"/>
+                                <variation key="heightClass=compact-widthClass=regular" constant="30"/>
+                                <variation key="heightClass=regular-widthClass=compact" constant="40"/>
+                            </constraint>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="b1h-BJ-Z2U" secondAttribute="trailing" constant="20" id="oYs-Cm-0q7"/>
+                            <constraint firstItem="b1h-BJ-Z2U" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ur6-ty-8WO"/>
+                            <constraint firstItem="Hgf-Fw-sTz" firstAttribute="top" secondItem="b1h-BJ-Z2U" secondAttribute="bottom" constant="30" id="vew-Fy-I1W">
+                                <variation key="heightClass=compact-widthClass=compact" constant="10"/>
+                                <variation key="heightClass=compact-widthClass=regular" constant="10"/>
+                            </constraint>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="ilu-7a-9Yk"/>
+                                <include reference="b2a-cn-ZCr"/>
+                                <include reference="vew-Fy-I1W"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="ilu-7a-9Yk"/>
+                                <include reference="b2a-cn-ZCr"/>
+                                <include reference="vew-Fy-I1W"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="ilu-7a-9Yk"/>
+                                <include reference="b2a-cn-ZCr"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <navigationItem key="navigationItem" title="Pashto Proverbs" id="fTL-si-ggW"/>
+                    <connections>
+                        <outlet property="bannerAd" destination="S4m-4y-1xn" id="WHF-3N-39M"/>
+                        <outlet property="proverbLabel" destination="bhb-a0-999" id="byW-EW-EJE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="426.08695652173918" y="-92.119565217391312"/>
+        </scene>
+        <!--ټولۍ-->
+        <scene sceneID="CH7-E7-EhJ">
+            <objects>
+                <viewController title="ټولۍ" id="0bh-xv-52N" customClass="CategoriesViewController" customModule="Pashto_Proverbs" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CNY-Ho-83y">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="IVr-Qq-fN3">
+                                <rect key="frame" x="0.0" y="64" width="375" height="548"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="ytB-6e-Ee9" customClass="CategoryViewCell" customModule="Pashto_Proverbs" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ytB-6e-Ee9" id="nvv-py-1bu">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CZZ-RL-q3t" userLabel="categoryView">
+                                                    <rect key="frame" x="280" y="-18.5" width="80" height="80.5"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="buttonBG" translatesAutoresizingMaskIntoConstraints="NO" id="UW6-gM-xRJ">
+                                                            <rect key="frame" x="8" y="8.5" width="64" height="64"/>
+                                                        </imageView>
+                                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="right" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="C" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MeV-u0-QZb" userLabel="categoryLabel">
+                                                            <rect key="frame" x="8" y="8.5" width="64" height="64"/>
+                                                            <fontDescription key="fontDescription" name="BahijUthmanTaha-Bold" family="Bahij Uthman Taha" pointSize="30"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstItem="UW6-gM-xRJ" firstAttribute="top" secondItem="CZZ-RL-q3t" secondAttribute="topMargin" id="1TJ-hP-k9T"/>
+                                                        <constraint firstAttribute="bottomMargin" secondItem="MeV-u0-QZb" secondAttribute="bottom" id="42c-UJ-Djv"/>
+                                                        <constraint firstItem="MeV-u0-QZb" firstAttribute="trailing" secondItem="CZZ-RL-q3t" secondAttribute="trailingMargin" id="8fq-lX-jst"/>
+                                                        <constraint firstAttribute="height" constant="80" id="CZV-1e-65f"/>
+                                                        <constraint firstItem="UW6-gM-xRJ" firstAttribute="leading" secondItem="CZZ-RL-q3t" secondAttribute="leadingMargin" id="O0q-t0-KxI"/>
+                                                        <constraint firstAttribute="trailingMargin" secondItem="UW6-gM-xRJ" secondAttribute="trailing" id="S9F-yC-qe2"/>
+                                                        <constraint firstAttribute="width" constant="80" id="UGs-fR-s1S"/>
+                                                        <constraint firstItem="MeV-u0-QZb" firstAttribute="top" secondItem="CZZ-RL-q3t" secondAttribute="topMargin" id="iGF-d6-ay5"/>
+                                                        <constraint firstItem="MeV-u0-QZb" firstAttribute="leading" secondItem="CZZ-RL-q3t" secondAttribute="leadingMargin" id="jme-73-TSe"/>
+                                                        <constraint firstItem="UW6-gM-xRJ" firstAttribute="bottom" secondItem="CZZ-RL-q3t" secondAttribute="bottomMargin" id="mR6-lR-j3f"/>
+                                                    </constraints>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WQd-Ai-Q2P" userLabel="countLabel">
+                                                    <rect key="frame" x="20" y="-3.5" width="50" height="50.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="50" id="1gj-QA-ZOl"/>
+                                                        <constraint firstAttribute="width" constant="50" id="gZw-c4-LZs"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="BahijUthmanTaha-Regular" family="Bahij Uthman Taha" pointSize="20"/>
+                                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="highlightedColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="CZZ-RL-q3t" secondAttribute="trailing" id="4Sg-kL-jB5"/>
+                                                <constraint firstItem="WQd-Ai-Q2P" firstAttribute="leading" secondItem="nvv-py-1bu" secondAttribute="leadingMargin" constant="5" id="Jpc-l6-Jjc"/>
+                                                <constraint firstItem="WQd-Ai-Q2P" firstAttribute="centerY" secondItem="nvv-py-1bu" secondAttribute="centerY" id="Kvh-ce-L0k"/>
+                                                <constraint firstItem="CZZ-RL-q3t" firstAttribute="leading" secondItem="WQd-Ai-Q2P" secondAttribute="trailing" priority="250" constant="190" id="jOG-DN-DGw"/>
+                                                <constraint firstItem="CZZ-RL-q3t" firstAttribute="centerY" secondItem="nvv-py-1bu" secondAttribute="centerY" id="oF4-9M-j4R"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="categoryLabel" destination="MeV-u0-QZb" id="1gR-Jp-ny1"/>
+                                            <outlet property="countLabel" destination="WQd-Ai-Q2P" id="5cW-fh-6rO"/>
+                                            <segue destination="3x3-Fz-46V" kind="show" identifier="proverbs" id="pId-KS-VYv"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="0bh-xv-52N" id="rrv-Ml-fo5"/>
+                                    <outlet property="delegate" destination="0bh-xv-52N" id="mgA-hh-mZ1"/>
+                                </connections>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lwJ-rt-yDT" userLabel="bannerAd" customClass="GADBannerView">
+                                <rect key="frame" x="0.0" y="612" width="375" height="55"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="s7v-yy-Kj8">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="95"/>
+                                    </constraint>
+                                </constraints>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="s7v-yy-Kj8"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="IVr-Qq-fN3" firstAttribute="leading" secondItem="Jnd-bq-xMh" secondAttribute="leading" id="Ot1-lj-7Ez"/>
+                            <constraint firstItem="IVr-Qq-fN3" firstAttribute="top" secondItem="Jnd-bq-xMh" secondAttribute="top" id="b3o-kz-3gb"/>
+                            <constraint firstItem="lwJ-rt-yDT" firstAttribute="leading" secondItem="Jnd-bq-xMh" secondAttribute="leading" id="bA1-kh-pWh"/>
+                            <constraint firstItem="lwJ-rt-yDT" firstAttribute="top" secondItem="IVr-Qq-fN3" secondAttribute="bottom" id="lbU-ft-OkB"/>
+                            <constraint firstItem="IVr-Qq-fN3" firstAttribute="centerX" secondItem="CNY-Ho-83y" secondAttribute="centerX" id="nAI-FE-dSv"/>
+                            <constraint firstItem="IVr-Qq-fN3" firstAttribute="trailing" secondItem="Jnd-bq-xMh" secondAttribute="trailing" id="rJO-Ie-3dO"/>
+                            <constraint firstItem="lwJ-rt-yDT" firstAttribute="trailing" secondItem="Jnd-bq-xMh" secondAttribute="trailing" id="sDH-EZ-klo"/>
+                            <constraint firstItem="Jnd-bq-xMh" firstAttribute="bottom" secondItem="lwJ-rt-yDT" secondAttribute="bottom" id="wkl-UL-vyx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Jnd-bq-xMh"/>
+                    </view>
+                    <connections>
+                        <outlet property="bannerAd" destination="lwJ-rt-yDT" id="ocC-DD-vJN"/>
+                        <outlet property="tableView" destination="IVr-Qq-fN3" id="JWF-1v-DFy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XeL-64-Axl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1192.8" y="-92.203898050974516"/>
+        </scene>
+        <!--متلونه-->
+        <scene sceneID="Czy-fb-Ox2">
+            <objects>
+                <viewController title="متلونه" id="3x3-Fz-46V" customClass="ProverbsViewController" customModule="Pashto_Proverbs" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1sG-jD-QPj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="vry-Iw-QOC">
+                                <rect key="frame" x="0.0" y="64" width="375" height="548"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="t2E-Ws-EaR" customClass="ProverbViewCell" customModule="Pashto_Proverbs" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="t2E-Ws-EaR" id="8c8-qe-hxX">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6CS-MD-ZBC">
+                                                    <rect key="frame" x="15" y="11" width="345" height="22"/>
+                                                    <fontDescription key="fontDescription" name="BahijUthmanTaha-Regular" family="Bahij Uthman Taha" pointSize="30"/>
+                                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="highlightedColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="6CS-MD-ZBC" secondAttribute="trailing" id="Hxd-Fa-HAQ"/>
+                                                <constraint firstItem="6CS-MD-ZBC" firstAttribute="top" secondItem="8c8-qe-hxX" secondAttribute="topMargin" id="L9e-oG-xTf"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="6CS-MD-ZBC" secondAttribute="bottom" id="uEH-RY-vT1"/>
+                                                <constraint firstItem="6CS-MD-ZBC" firstAttribute="leading" secondItem="8c8-qe-hxX" secondAttribute="leadingMargin" id="yym-jk-iy4"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="proverbLabel" destination="6CS-MD-ZBC" id="9I8-hu-Qh0"/>
+                                            <segue destination="VkV-KY-2wD" kind="show" identifier="proverbDetailView" id="100-qQ-283"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="3x3-Fz-46V" id="nqH-Z8-dND"/>
+                                    <outlet property="delegate" destination="3x3-Fz-46V" id="Ma2-zq-e5H"/>
+                                </connections>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="43e-L6-htB" userLabel="bannerAd" customClass="GADBannerView">
+                                <rect key="frame" x="0.0" y="612" width="375" height="55"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="3bA-mX-qiH">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="95"/>
+                                    </constraint>
+                                </constraints>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="3bA-mX-qiH"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="vry-Iw-QOC" firstAttribute="top" secondItem="e3a-rA-uUh" secondAttribute="top" id="NVc-Pd-cpZ"/>
+                            <constraint firstItem="e3a-rA-uUh" firstAttribute="bottom" secondItem="43e-L6-htB" secondAttribute="bottom" id="d2f-co-VGL"/>
+                            <constraint firstItem="vry-Iw-QOC" firstAttribute="leading" secondItem="e3a-rA-uUh" secondAttribute="leading" id="h3I-sF-AR9"/>
+                            <constraint firstItem="43e-L6-htB" firstAttribute="top" secondItem="vry-Iw-QOC" secondAttribute="bottom" id="isT-FL-Cpy"/>
+                            <constraint firstItem="43e-L6-htB" firstAttribute="top" secondItem="vry-Iw-QOC" secondAttribute="bottom" id="let-Xl-O0y"/>
+                            <constraint firstItem="43e-L6-htB" firstAttribute="leading" secondItem="e3a-rA-uUh" secondAttribute="leading" id="m5L-TW-7MC"/>
+                            <constraint firstItem="e3a-rA-uUh" firstAttribute="trailing" secondItem="vry-Iw-QOC" secondAttribute="trailing" id="qAS-fp-wt5"/>
+                            <constraint firstItem="e3a-rA-uUh" firstAttribute="trailing" secondItem="43e-L6-htB" secondAttribute="trailing" id="tWb-3C-2wP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="e3a-rA-uUh"/>
+                    </view>
+                    <connections>
+                        <outlet property="bannerAd" destination="43e-L6-htB" id="LOj-T5-7Vo"/>
+                        <outlet property="tableView" destination="vry-Iw-QOC" id="Rzb-ec-jTM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qyO-yz-Hsm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2001" y="-92"/>
+        </scene>
+        <!--متل-->
+        <scene sceneID="G6A-Ia-p1w">
+            <objects>
+                <viewController title="متل" id="VkV-KY-2wD" customClass="DetailViewController" customModule="Pashto_Proverbs" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="COm-cd-XGr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is text for the proverb forwarded by tapping the cell on previous table." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ok-wg-nMf" userLabel="proverb">
+                                <rect key="frame" x="20" y="104" width="335" height="508"/>
+                                <fontDescription key="fontDescription" name="BahijUthmanTaha-Regular" family="Bahij Uthman Taha" pointSize="35"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <variation key="heightClass=compact-widthClass=compact">
+                                    <fontDescription key="fontDescription" name="BahijUthmanTaha-Regular" family="Bahij Uthman Taha" pointSize="40"/>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="BahijUthmanTaha-Regular" family="Bahij Uthman Taha" pointSize="55"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="BahijUthmanTaha-Regular" family="Bahij Uthman Taha" pointSize="60"/>
+                                </variation>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Icd-lJ-QJM" userLabel="bannerAd" customClass="GADBannerView">
+                                <rect key="frame" x="0.0" y="612" width="375" height="55"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="Ub4-dz-2j7"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Icd-lJ-QJM" firstAttribute="leading" secondItem="9UY-a6-CGO" secondAttribute="leading" id="FQ2-LL-QGq"/>
+                            <constraint firstItem="9UY-a6-CGO" firstAttribute="trailing" secondItem="0Ok-wg-nMf" secondAttribute="trailing" constant="20" id="dPZ-UD-yMg"/>
+                            <constraint firstItem="0Ok-wg-nMf" firstAttribute="leading" secondItem="9UY-a6-CGO" secondAttribute="leading" constant="20" id="eXX-pr-36K"/>
+                            <constraint firstItem="Icd-lJ-QJM" firstAttribute="top" secondItem="0Ok-wg-nMf" secondAttribute="bottom" id="mgW-d6-I4m"/>
+                            <constraint firstItem="9UY-a6-CGO" firstAttribute="trailing" secondItem="Icd-lJ-QJM" secondAttribute="trailing" id="qAK-da-hfl"/>
+                            <constraint firstItem="9UY-a6-CGO" firstAttribute="bottom" secondItem="Icd-lJ-QJM" secondAttribute="bottom" id="qG1-Zr-wuC"/>
+                            <constraint firstItem="Icd-lJ-QJM" firstAttribute="top" secondItem="0Ok-wg-nMf" secondAttribute="bottom" id="run-rZ-Usm"/>
+                            <constraint firstItem="0Ok-wg-nMf" firstAttribute="top" secondItem="9UY-a6-CGO" secondAttribute="top" constant="40" id="yND-NY-TZl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9UY-a6-CGO"/>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="0Ok-wg-nMf"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=regular">
+                            <mask key="subviews">
+                                <include reference="0Ok-wg-nMf"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="subviews">
+                                <include reference="0Ok-wg-nMf"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="متل" id="rWP-tj-VvR">
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="add" id="gcy-ri-5j1">
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="addFavorite:" destination="VkV-KY-2wD" id="to9-wR-8tN"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem systemItem="action" id="hi0-qR-rqJ">
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="share:" destination="VkV-KY-2wD" id="nOs-vP-EUB"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="bannerAd" destination="Icd-lJ-QJM" id="Eqw-Hv-pjf"/>
+                        <outlet property="proverbLabel" destination="0Ok-wg-nMf" id="2pT-N3-4oJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ubJ-tc-bJy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2778.4000000000001" y="-92.203898050974516"/>
+        </scene>
+        <!--زما د خوښې-->
+        <scene sceneID="AEk-zL-uxa">
+            <objects>
+                <viewController title="زما د خوښې" id="70i-96-YS9" customClass="FavoriteViewController" customModule="Pashto_Proverbs" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DdR-Ug-k7L">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="BqZ-zi-bL0">
+                                <rect key="frame" x="0.0" y="64" width="375" height="548"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="gwi-uw-1dU" customClass="ProverbViewCell" customModule="Pashto_Proverbs" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gwi-uw-1dU" id="Jdx-Fv-EbY">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rWa-Zp-Qgz">
+                                                    <rect key="frame" x="15" y="11" width="345" height="22"/>
+                                                    <fontDescription key="fontDescription" name="BahijUthmanTaha-Regular" family="Bahij Uthman Taha" pointSize="30"/>
+                                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="highlightedColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="rWa-Zp-Qgz" firstAttribute="top" secondItem="Jdx-Fv-EbY" secondAttribute="topMargin" id="4Gg-0h-vKp"/>
+                                                <constraint firstItem="rWa-Zp-Qgz" firstAttribute="trailing" secondItem="Jdx-Fv-EbY" secondAttribute="trailingMargin" id="CYK-c9-T0V"/>
+                                                <constraint firstItem="rWa-Zp-Qgz" firstAttribute="bottom" secondItem="Jdx-Fv-EbY" secondAttribute="bottomMargin" id="lbG-AW-o4U"/>
+                                                <constraint firstItem="rWa-Zp-Qgz" firstAttribute="leading" secondItem="Jdx-Fv-EbY" secondAttribute="leadingMargin" id="pYy-qg-323"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="proverbLabel" destination="rWa-Zp-Qgz" id="wIZ-Gu-ZqT"/>
+                                            <segue destination="VkV-KY-2wD" kind="show" identifier="proverbDetailView" id="ht3-Af-8Yl"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="70i-96-YS9" id="S4z-bS-QQN"/>
+                                    <outlet property="delegate" destination="70i-96-YS9" id="zW4-p9-moQ"/>
+                                </connections>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ucv-vl-DJe" userLabel="bannerAd" customClass="GADBannerView">
+                                <rect key="frame" x="0.0" y="612" width="375" height="55"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="ylS-lR-8o2">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="95"/>
+                                    </constraint>
+                                </constraints>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="ylS-lR-8o2"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="oDd-pK-eEm" firstAttribute="bottom" secondItem="Ucv-vl-DJe" secondAttribute="bottom" id="1AD-Au-eF4"/>
+                            <constraint firstItem="oDd-pK-eEm" firstAttribute="trailing" secondItem="BqZ-zi-bL0" secondAttribute="trailing" id="6W4-Gf-qpo"/>
+                            <constraint firstItem="Ucv-vl-DJe" firstAttribute="leading" secondItem="oDd-pK-eEm" secondAttribute="leading" id="HCZ-Um-4AG"/>
+                            <constraint firstItem="Ucv-vl-DJe" firstAttribute="top" secondItem="BqZ-zi-bL0" secondAttribute="bottom" id="NVg-2W-mxd"/>
+                            <constraint firstItem="Ucv-vl-DJe" firstAttribute="top" secondItem="BqZ-zi-bL0" secondAttribute="bottom" id="hpB-Sq-Kn7"/>
+                            <constraint firstItem="BqZ-zi-bL0" firstAttribute="top" secondItem="oDd-pK-eEm" secondAttribute="top" id="hzL-o3-V9g"/>
+                            <constraint firstItem="BqZ-zi-bL0" firstAttribute="leading" secondItem="oDd-pK-eEm" secondAttribute="leading" id="qvz-16-YMr"/>
+                            <constraint firstItem="oDd-pK-eEm" firstAttribute="trailing" secondItem="Ucv-vl-DJe" secondAttribute="trailing" id="yCL-9r-Rwa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="oDd-pK-eEm"/>
+                    </view>
+                    <connections>
+                        <outlet property="bannerAd" destination="Ucv-vl-DJe" id="1O7-nt-fme"/>
+                        <outlet property="tableView" destination="BqZ-zi-bL0" id="4Qb-Mw-hPA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uga-KB-sqQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="424.80000000000001" y="658.92053973013503"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="WLb-U5-xQf">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8O0-Vs-NDN" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ifr-YU-yte">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="bYW-KO-q8j"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZSP-Bw-xit" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-320.28985507246381" y="-92.119565217391312"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bg" width="700" height="700"/>
+        <image name="buttonBG" width="100" height="100"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="100-qQ-283"/>
+    </inferredMetricsTieBreakers>
 </document>
